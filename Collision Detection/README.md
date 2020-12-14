@@ -1,8 +1,8 @@
-## Collision Detection
+# Collision Detection
 
 Di dalam project ini terdapat beberapa class sebagai berikut :
 
-#### 1. Sprite Class
+### 1. Sprite Class
 Kelas ini merupakan superclass dari spaceship, alien dan missile. Dimana fungsi-fungsi class ini akan diturunkan kepada 3 class tersebut. Berikut method-method yang terdapat pada class Sprite.
 ```
 1. <Construstor> sprite
@@ -36,7 +36,7 @@ Untuk mengetahui apakah gambar tersebut berada dalam mode visible atau tidak.
 8. getBound
 ```
 
-#### 2. SpaceShip Class
+### 2. SpaceShip Class
 Kelas ini merupakan kelas yang diturunkan dari kelas Sprite. Kelas ini berfungsi untuk membuat dan mengatur object Space Ship yang akan kita kendalikan di dalam game. Objek yang terdapat di class ini antara lain.
 ```
 1. Missiles
