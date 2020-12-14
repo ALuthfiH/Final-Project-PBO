@@ -149,7 +149,7 @@ Berfungsi untuk mengecek apakah terdapat alien yang tersisa dalam panel, jika iy
 Berfungsi untuk mengecek apakah ada tabrakan antara alien dan Space Ship.
 
 ### 6. CollisionEx
-Kelas ini merupakan kelas yang berfunsgi sebagai Main Class, Kelas yang digunakan untuk mengeksekusi jalannya program. Method-method yang terdapat pada class ini antara lain.
+Kelas ini merupakan kelas yang berfungsi sebagai Main Class, Kelas yang digunakan untuk mengeksekusi jalannya program. Method-method yang terdapat pada class ini antara lain.
 ```
 1. <Constructor> CollisionEx dan initUI
 ```
