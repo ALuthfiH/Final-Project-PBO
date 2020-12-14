@@ -159,4 +159,4 @@ Berfungsi untuk membuat frame permainan, judul dan operasi pada frame permainan.
 ```
 Method yang berfungsi untuk mengeksekusi permainan.
 
-![](Collision Detction/Collision.jpg)
+![](Collision Detection/Collision.jpg)
