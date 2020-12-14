@@ -158,3 +158,5 @@ Berfungsi untuk membuat frame permainan, judul dan operasi pada frame permainan.
 2. main()
 ```
 Method yang berfungsi untuk mengeksekusi permainan.
+
+![](Collision.jpg)
