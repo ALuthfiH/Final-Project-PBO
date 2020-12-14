@@ -159,4 +159,5 @@ Berfungsi untuk membuat frame permainan, judul dan operasi pada frame permainan.
 ```
 Method yang berfungsi untuk mengeksekusi permainan.
 
+# Tampilan Saat Program Dijalankan
 ![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Collision%20Detection/Collison.JPG)
