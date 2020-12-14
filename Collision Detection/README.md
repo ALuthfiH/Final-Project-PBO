@@ -82,3 +82,79 @@ Berfungsi untuk menampilkan gambar dari alien.
 3. move
 ```
 Berfungsi untuk mengatur gerakan setiap alien. Selain itu, befungsi juga agar alien dapat kembali ke sisi kanan layar saat alien melewati sisi kiri layar.
+
+### 4. Missile Class
+Kelas ini juga merupakan kelas yang diturunkan dari kelas Sprite. Kelas ini merupakan kelas yang berfungsi membuat dan mengatur ketentuan saat missile ditembakkan. Method-method yang terdapat dalam class ini antara lain.
+```
+1. <constructor> Missile
+```
+Berfungsi untuk menginisialisasi letak awal misil.
+```
+2. initMissile
+```
+Berfungsi untuk menampilkan gambar misil.
+```
+3. move
+```
+Berfungsi untuk mengatur kecepatan pergerakan dari misil yang ditembakkan.
+
+### 5. Board Class
+Kelas ini merupakan penurunan dari kelas JPanel. Selain itu, kelas ini juga mengimplementasi fungsi dari ActionListeners. Kelas ini berfungsi untuk mengatur dan menginisialisasi hal-hal yang ada pada tampilan permainan. Method-method yang ada pada class ini antara lain.
+```
+1. pos
+```
+Method ini berfungsi untuk mengatur posisi awal alien-alien.
+```
+2. Board dan initBoard
+```
+Fungsi yang digunakan untuk menampilkan penampilan awal permainan. seperti letak space ship dan sisa alien yang harus dikalahkan.
+```
+3. initAlien
+```
+Berfungsi untuk membuat objek alien. Objek Alien dibuat dalam bentuk array.
+```
+4. paintComponen
+```
+Melakukan implementasi antara menampilkan permainan atau menampilkan pesan "game over".
+```
+5. drawObject
+```
+Menampilkan gambar awal permainan seperti space shipnya.
+```
+6. drawGameOver
+```
+Berfungsi untuk menampilkan pesan "game over".
+```
+7. actionPerformed
+```
+Berfungsi untuk memperbarui letak dan tampilan setiap objek setelah adanya aksi.
+```
+8. inGame
+```
+```
+9. updateShip
+```
+Befungsi memperbarui letak space ship setiap adanya perintah yang dilakukan oleh user.
+```
+10. updateMissile
+```
+Berfungsi untuk memperbarui letak dan tampilan misil, serta membuang misil yang sudah bertabrakan dengan alien.
+```
+11. updateAlien
+```
+Berfungsi untuk mengecek apakah terdapat alien yang tersisa dalam panel, jika iya maka perbarui letak dan tampilannya. jika alien telah habis, maka keluarkan pesan "game over".
+```
+12. checkCollsion
+```
+Berfungsi untuk mengecek apakah ada tabrakan antara alien dan Space Ship.
+
+### 6. CollisionEx
+Kelas ini merupakan kelas yang berfunsgi sebagai Main Class, Kelas yang digunakan untuk mengeksekusi jalannya program. Method-method yang terdapat pada class ini antara lain.
+```
+1. <Constructor> CollisionEx dan initUI
+```
+Berfungsi untuk membuat frame permainan, judul dan operasi pada frame permainan.
+```
+2. main()
+```
+Method yang berfungsi untuk mengeksekusi permainan.
