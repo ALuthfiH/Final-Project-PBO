@@ -67,3 +67,18 @@ Method yang digunakan untuk menambahkan satu misil ketika user memberikan perint
 6. keyRealeased
 ```
 Mengatur agar Space Ship tetap diam saat user tidak menekan key perintah Space Ship.
+
+### 3. Alien Class
+Kelas ini juga  merupakan kelas yang diturunkan dari kelas Sprite. Kelas ini merupakan kelas yang berfungsi membuat dan mengatur pergerakan objek alien. Berikut method-method yang terdapat pada class Alien.
+```
+1. <Constructor> Alien
+```
+Berfungsi untuk menginisialisasi titik awal dari Alien.
+```
+2. initAlien
+```
+Berfungsi untuk menampilkan gambar dari alien.
+```
+3. move
+```
+Berfungsi untuk mengatur gerakan setiap alien. Selain itu, befungsi juga agar alien dapat kembali ke sisi kanan layar saat alien melewati sisi kiri layar.
