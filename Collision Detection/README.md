@@ -19,7 +19,7 @@ Berfungsi untuk mengambil dan memasukkan gambar.
 ```
 4. getImage 
 ```
-Method yang mengembalikkan nilai berupa gambar.
+Method yang mengembalikan nilai berupa gambar.
 ```
 5. getX dan getY
 ```
