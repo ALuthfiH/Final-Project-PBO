@@ -4,7 +4,7 @@ Program ini merupakan program yang sama seperti collision detection sebelumnya, 
 
 ### Kelas SpaceShip
 #### 1. initCraft
-Pada kelas initCraft, terdapat tambahan perintah untuk membatasi gerak Spaceship secara horizontal dan vertikal.
+Pada method initCraft, terdapat tambahan perintah untuk membatasi gerak Spaceship secara horizontal dan vertikal.
 #### 2. mouseClick dan mouseDragged
 Pada Collision Detection sebelumnya, kelas SpaceShip menggunakan method keyPressed dan keyReleased. Pada Collision Detection kali ini, kelas SpaceShip menggunakan method mouseClick dan mouseDragged untuk memanggil method fire() saat tombol mouse ditekan.
 #### 3. mouseMoved
