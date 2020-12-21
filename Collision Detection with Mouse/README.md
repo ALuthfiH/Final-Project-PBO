@@ -8,4 +8,14 @@ Pada kelas initCraft, terdapat tambahan perintah untuk membatasi gerak Spaceship
 ##### 2. mouseClick dan mouseDragged
 Pada Collision Detection sebelumnya, kelas SpaceShip menggunakan method keyPressed dan keyReleased. Pada Collision Detection kali ini, kelas SpaceShip menggunakan method mouseClick dan mouseDragged untuk memanggil method fire() saat tombol mouse ditekan
 ##### 3. mouseMoved
+Method ini berfungsi untuk menghentikan Spaceship apabila telah mencapai batas kanan dan bawah tampilan.
+
+### Kelas Sprite
+##### 1. getWidht dan getHeight
+Method ini digunakan untuk mengambil panjang dari gambar spaceship, missile, dan alien yang telah disisipkan pada project.
+
+### Kelas Board
+1. Pada class ini, dilakukan penyesuaian terhadap method TAdapter dimana jika sebelumnya terdapat method-method yang digunakan untuk melakukan event pada keyboard digantikan dengan method-method untuk melakukan event pada mouse dari method yang telah ditambahkan dari kelas SpaceShip
+
+### Rekaman Jalannya Program
 
