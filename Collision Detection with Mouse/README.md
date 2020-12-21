@@ -15,7 +15,7 @@ Method ini berfungsi untuk menghentikan Spaceship apabila telah mencapai batas k
 Method ini digunakan untuk mengambil panjang dari gambar spaceship, missile, dan alien yang telah disisipkan pada project.
 
 ### Kelas Board
-Pada class ini, dilakukan penyesuaian terhadap method TAdapter dimana jika sebelumnya terdapat method-method yang digunakan untuk melakukan event pada keyboard digantikan dengan method-method untuk melakukan event pada mouse dari method yang telah ditambahkan dari kelas SpaceShip
+Pada class ini, dilakukan penyesuaian terhadap method TAdapter dimana jika sebelumnya terdapat method-method yang digunakan untuk melakukan event pada keyboard digantikan dengan method-method untuk melakukan event pada mouse dari method yang telah ditambahkan dari kelas SpaceShip.
 
 ### Rekaman Jalannya Program
 
