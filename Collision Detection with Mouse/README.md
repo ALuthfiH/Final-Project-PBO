@@ -18,4 +18,4 @@ Method ini digunakan untuk mengambil panjang dari gambar spaceship, missile, dan
 Pada class ini, dilakukan penyesuaian terhadap method TAdapter dimana jika sebelumnya terdapat method-method yang digunakan untuk melakukan event pada keyboard digantikan dengan method-method untuk melakukan event pada mouse dari method yang telah ditambahkan dari kelas SpaceShip.
 
 ### Rekaman Jalannya Program
-
+https://youtu.be/QafyqbIHNlM
