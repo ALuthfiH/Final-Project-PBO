@@ -4,4 +4,10 @@ Flappy Bird merupakan permainan dibuat oleh seorang pengembang dari Hanoi, Vietn
 
 ## Tambahan Fitur
 ### 1. Sistem Scoring
-Kami menambahkan sistem scoring yang dimana score tertinggi dari user selama bermain akan disimpan dan ditampilkan pada layar. Selain itu, score akan diupdate setiap kali user mencetak score yang lebih tinggi
+Kami menambahkan sistem scoring yang dimana score tertinggi dari user selama bermain akan disimpan dan ditampilkan pada layar. Selain itu, score akan diupdate setiap kali user mencetak score yang lebih tinggi.
+### 2. Level yang Berbeda-beda
+Selain itu, terdapat sistem tingkat kesulitan yang dimana semakin tinggi tingkat kesulitannya maka akan semakin cepat kecepatan permainan tersebut.
+### 3. Memilih Variasi Burung
+Fitur yang terakhir ditambahkan adalah variasi burung sehingga user sendiri dapat memilih variasi burung yang telah disediakan oleh game.
+
+## Diagram Kelas Secara Umum (Belum termasuk fitur tambahan)
