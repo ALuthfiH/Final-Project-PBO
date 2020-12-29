@@ -11,3 +11,4 @@ Selain itu, terdapat sistem tingkat kesulitan yang dimana semakin tinggi tingkat
 Fitur yang terakhir ditambahkan adalah variasi burung sehingga user sendiri dapat memilih variasi burung yang telah disediakan oleh game.
 
 ## Diagram Kelas Secara Umum (Belum termasuk fitur tambahan)
+![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Collision%20Detection/CollisionStarUML.png)
