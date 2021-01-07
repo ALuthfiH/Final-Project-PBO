@@ -3,9 +3,6 @@ package id.ac.its.alfarabi039_ridho170_luthfi179.fp_flappybird;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
-import javax.swing.ImageIcon;
-
-
 public class Bird extends GameObject {
 	Animation animation;
 	BufferedImage bird;
@@ -51,7 +48,5 @@ public class Bird extends GameObject {
     @Override
     public void render(final Graphics g) {
         this.animation.render(g);
-//    	g.drawImage(this.bird, this.x, this.y, this.width, this.height, null);
-//    	g.drawImage(this.bird, this.x, this.y, this.width, this.height, null);
     }
 }
