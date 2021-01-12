@@ -31,10 +31,6 @@ public class Game extends Canvas implements Runnable
     Thread thread;
     ServerSocket serverSocket;
     
-    public static void main(final String[] args) {
-        new Window(432, 768, "FlappyBird", new Game());
-    }
-    
     public synchronized void start() {
         this.running = true;
         (this.thread = new Thread()).start();
