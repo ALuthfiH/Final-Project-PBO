@@ -8,11 +8,9 @@ public class Ground extends GameObject {
     private int x2;
     private float velX;
     
-    public Ground() {
-    	super(0);
-    	this.height = 168;
+    public Ground(final int x, final int y, final int width, final int height) {
+    	super(x, y, width, height);
         this.x2 = Game.WIDTH;
-        this.y = Game.HEIGHT - this.height;
         this.velX = 4.0f;
         this.image = GraphicsLoader.loadGraphics("ground.png");
     }
@@ -34,4 +32,3 @@ public class Ground extends GameObject {
         g.drawImage(this.image, this.x2, this.y, null);
     }
 }
-
