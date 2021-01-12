@@ -42,7 +42,7 @@ public class Game extends Canvas implements Runnable
         this.addMouseListener((MouseListener)new MouseHandler());
         Game.img_gameover = GraphicsLoader.loadGraphics("gameover.png");
         Game.background = GraphicsLoader.loadGraphics("background.png");
-        Game.ground = new Ground();
+        Game.ground = new Ground(0, Game.HEIGHT - 168, Game.WIDTH, 168);
         Game.bird = new Bird(50, 50, 51, 36);
         Game.startButton = new Button(138, 200, 156, 87, GraphicsLoader.loadGraphics("playbutton.png"));
     }
