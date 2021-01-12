@@ -23,10 +23,6 @@ public abstract class GameObject {
         this.height = height;
     }
 	
-    public GameObject(final int x) {
-        this.x = x;
-    }
-	
     public abstract void tick();
     
     public abstract void render(final Graphics p0);
