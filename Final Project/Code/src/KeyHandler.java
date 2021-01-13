@@ -12,8 +12,9 @@ public class KeyHandler implements KeyListener {
     @Override
     public void keyPressed(final KeyEvent e) {
 	if(e.getKeyCode() == KeyEvent.VK_SPACE && Game.gameover) {
-    		Game.startButton.pressed = true;
+    	    Game.startButton.pressed = true;
             ObjectHandler.list.clear();
+	    Game.bird.setY(50);
             ObjectHandler.addObject((GameObject)Game.bird);
             Game.gameover = false;
             Game.score = 0;
