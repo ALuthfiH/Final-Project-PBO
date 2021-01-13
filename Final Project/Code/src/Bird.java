@@ -30,6 +30,7 @@ public class Bird extends GameObject {
         if (this.y + this.height > 602) {
             this.y = 602 - this.height;
             this.setVelY(0.0f);
+            Game.gameover = true;
         }
         if (this.y < 0) {
             this.y = 0;
