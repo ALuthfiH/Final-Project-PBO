@@ -1,7 +1,5 @@
-package id.ac.its.alfarabi0039.ridho170.luthfi179.fp_flappybird;
+package id.ac.its.alfarabi039_ridho170_luthfi179.fp_flappybird;
 
-import java.awt.image.ImageObserver;
-import java.awt.Image;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
@@ -13,7 +11,7 @@ public class Tube extends GameObject {
     public Tube(final int x, final int y, final int width, final int height, final TubeType type) {
         super(x, y, width, height);
         this.type = type;
-        this.velX = 3.0f;
+        this.velX = Game.ground.velX;
         this.tube = GraphicsLoader.loadGraphics("tube.png");
         if (type == TubeType.BOTTOM) {
             this.tubeBlock = GraphicsLoader.loadGraphics("tubebottomdown.png");
@@ -30,6 +28,7 @@ public class Tube extends GameObject {
             ObjectHandler.removeObject((GameObject)this);
             if (this.type == TubeType.TOP) {
                 ++Game.score;
+                Game.ground.velX += 0.5;
             }
         }
     }
