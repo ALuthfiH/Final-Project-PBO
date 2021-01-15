@@ -15,6 +15,7 @@ public class KeyHandler implements KeyListener {
     	    Game.startButton.pressed = true;
             ObjectHandler.list.clear();
 	    Game.bird.setY(50);
+	    Game.ground.setVelX(4.0f);
             ObjectHandler.addObject((GameObject)Game.bird);
             Game.gameover = false;
             Game.score = 0;
