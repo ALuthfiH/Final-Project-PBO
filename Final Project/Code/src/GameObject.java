@@ -2,10 +2,7 @@ package id.ac.its.alfarabi039_ridho170_luthfi179.fp_flappybird;
 
 import java.awt.Rectangle;
 
-import javax.swing.ImageIcon;
-
 import java.awt.Graphics;
-import java.awt.Image;
 
 public abstract class GameObject {
 	protected int x;
@@ -14,7 +11,6 @@ public abstract class GameObject {
     protected int height;
     protected float velX;
     protected float velY;
-    protected Image image;
     
     public GameObject(final int x, final int y, final int width, final int height) {
         this.x = x;
@@ -22,15 +18,10 @@ public abstract class GameObject {
         this.width = width;
         this.height = height;
     }
-	
+    
     public abstract void tick();
     
     public abstract void render(final Graphics p0);
-    
-    protected void loadImage(String imageName) {
-    	ImageIcon ii = new ImageIcon(getClass().getResource(imageName));
-        image = ii.getImage();
-    }
     
     public Rectangle getBounds() {
         return new Rectangle(this.x, this.y, this.width, this.height);
