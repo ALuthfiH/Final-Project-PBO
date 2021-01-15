@@ -6,7 +6,6 @@ import java.awt.image.BufferedImage;
 public class Ground extends GameObject {
 	private BufferedImage image;
     private int x2;
-    private float velX;
     
     public Ground(final int x, final int y, final int width, final int height) {
     	super(x, y, width, height);
