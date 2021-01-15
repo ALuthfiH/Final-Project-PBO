@@ -11,7 +11,7 @@ Selain itu, terdapat sistem tingkat kesulitan yang dimana akan terus meningkat s
 ### 1. Mouse Handler
 Jika sebelumnya pada sumber referensi mousehandler hanya berfungsi ketika mengklik tombol mulai, maka disini kita menambahkan fungsi Mouseclicked pada mousehandler dimana akan berfungsi untuk mengontrol movement burung. Objek burung akan terbang setiap kali mengklik mouse.
 ### 2. Key Handler
-Pada sumber referensi tombol spasi berfungsi untuk menerbangkan burung, namun tidak dapat digunakan untuk memulai Game kembali setelah GameOver. Maka dari itu disini ketika menambahkan fungsi spasi sebagai tombol untuk memulai Game kembali.
+Pada sumber referensi tombol spasi berfungsi untuk menerbangkan burung, namun tidak dapat digunakan untuk memulai Game kembali setelah GameOver. Maka dari itu disini kita menambahkan fungsi spasi sebagai tombol untuk memulai Game kembali.
 ### 3. GameOver
 Sebelumnya, permainan akan berakhir atau GameOver hanya jika objek burung menabrak salah satu tube. Namun disini kita menambahkan fungsi dimana ketika objek burung jatuh ke tanah/Ground maka permainan akan berakhir atau GameOver.
 ### 4. Level permainan
