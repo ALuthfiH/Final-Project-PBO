@@ -14,7 +14,9 @@ Jika sebelumnya pada sumber referensi mousehandler hanya berfungsi ketika mengkl
 Pada sumber referensi tombol spasi berfungsi untuk menerbangkan burung, namun tidak dapat digunakan untuk memulai Game kembali setelah GameOver. Maka dari itu disini kita menambahkan fungsi spasi sebagai tombol untuk memulai Game kembali.
 ### 3. GameOver
 Sebelumnya, permainan akan berakhir atau GameOver hanya jika objek burung menabrak salah satu tube. Namun disini kita menambahkan fungsi dimana ketika objek burung jatuh ke tanah/Ground maka permainan akan berakhir atau GameOver.
-### 4. Level permainan
+### 4. Posisi objek Burung
+Pada sumber referensi, ketika permainan dimulai kembali setelah GameOver, posisi Burung berada pada koordinat yang sama dengan posisi Burung saat GameOver. Hal tersebut mengakibatkan objek Burung sulit untuk diterbangkan ketika posisi GameOvernya tepat berada di tanah/Ground. Maka dari itu disini kami menempatkan posisi Burung saat memulai permainan kembali sama seperti posisi awal permainan baru dimulai.
+### 5. Level permainan
 Dan yang terakhir kami juga menambahkan sistem level pada permainan. Dimana semakin besar skor yang didapat, maka akan semakin cepat kecepatan permainan tersebut.
 ## Diagram Kelas Secara Umum (Belum termasuk fitur tambahan)
 ![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Final%20Project/FlappyBird_FP.png)
