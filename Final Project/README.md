@@ -127,5 +127,43 @@ spawnTube() merupakan fungsi yang akan menampilkan pipa selanjutnya jika kita me
 Kelas ini merupakan kelas yang akan memberikan aksi ketika key pada keyboad ditekan.
 ### 13. MouseHandler
 Kelas MouseHandler ini merupakan kelas yang akan memberikan aksi ketika mouse diklik.
+### 14. GraphicsLoader
+Merupakan kelas yang berfungsi untuk load image dari spesifik file.
+```
+public static BufferedImage loadGraphics(final String path) {
+        BufferedImage image = null;
+        try {
+            image = ImageIO.read(ResourceLoader.load("/" + path));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        return image;
+    }
+```
+Pada method diatas Image I / O mengenali file sebagai gambar dalam format JPEG dan menerjemahkannya menjadi BufferedImage yang dapat langsung digunakan oleh Java 2D
+### 15. ResourceLoader
+Merupakan kelas yang beroperasi bersama kelas GraphicsLoader untuk load image dari spesifik file.
+```
+public static InputStream load(final String path) {
+        InputStream input = ResourceLoader.class.getResourceAsStream(path);
+        if (input == null) {
+            input = ResourceLoader.class.getResourceAsStream(path);
+        }
+        return input;
+    }
+```
+Pada method diatas terdapat kelas Java InputStream yang berfungsi untuk dapat membaca data sebagai urutan byte.
+### 16. Main
+Merupakan kelas utama untuk menjalankan program.
+```
+public class Main {
+
+	public static void main(String[] args) {
+		
+		new Window(432, 768, "FlappyBird", new Game());
+	}
+}
+```
 ## Diagram Kelas Secara Umum (Belum termasuk fitur tambahan)
 ![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Final%20Project/FlappyBird_FP.png)
