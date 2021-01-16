@@ -48,5 +48,19 @@ merupakan method action yang akan dilakukan oleh kelas turunannya.
 public abstract void render(final Graphics p0);
 ```
 merupakan method yang berfungsi untuk mengeksekusi Graphic.
+### 2. Ground
+Ground merupakan kelas turunan dari GameObject. Kelas ini Berfungsi untuk mengatur tanah atau dataran pada permainan Flappy Bird. Isi dari kelas Ground adalah sebagai berikut.
+```
+public Ground(final int x, final int y, final int width, final int height)
+```
+Merupakan constructor dari kelas Ground.
+```
+public void tick()
+```
+Merupakan method action. Pada method ini, kecepatan tanah atau dataran bergerak diatur.
+```
+public void render(final Graphics g)
+```
+Merupakan method yang berfungsi untuk menggambar object tanah setiap kali terjadi perubahan tiap waktunya.
 ## Diagram Kelas Secara Umum (Belum termasuk fitur tambahan)
 ![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Final%20Project/FlappyBird_FP.png)
