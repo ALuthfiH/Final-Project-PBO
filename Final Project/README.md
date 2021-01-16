@@ -62,5 +62,13 @@ Merupakan method action. Pada method ini, kecepatan tanah atau dataran bergerak 
 public void render(final Graphics g)
 ```
 Merupakan method yang berfungsi untuk menggambar object tanah setiap kali terjadi perubahan tiap waktunya.
+### 3. ObjectHandler
+ObjectHandler merupakan kelas yang berfungsi untuk menangani benda-benda yang bergerak dalam game Flappy Bird. Pada kelas ini, terdapat linkedlist yang dimana saat object bergerak telah keluar dari area layar maka akan diremove.
+### 4. Button
+Kelas button merupakan kelas yang berfungsi untuk mengatur 
+### 5. Window
+Kelas ini merupakan kelas yang diturunkan dari kelas JFrame. Kelas ini mengatur Seperti apa panel yang akan dimunculkan di layar. Selain itu kelas ini juga memanggil kelas game yang dimana program akan tereksekusi.
+### 6. Game
+Kelas Game merupakan kelas main. Kelas ini digunakan untuk mengeksekusi jalannya program.
 ## Diagram Kelas Secara Umum (Belum termasuk fitur tambahan)
 ![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Final%20Project/FlappyBird_FP.png)
