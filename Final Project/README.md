@@ -94,12 +94,61 @@ public void render(final Graphics g)
 Merupakan method yang berfungsi untuk menggambar object tanah setiap kali terjadi perubahan tiap waktunya.
 ### 5. ObjectHandler
 ObjectHandler merupakan kelas yang berfungsi untuk menangani benda-benda yang bergerak dalam game Flappy Bird. Pada kelas ini, terdapat linkedlist yang dimana saat object bergerak telah keluar dari area layar maka akan diremove.
+```
+public static LinkedList<GameObject> list;
+    
+    static {
+        ObjectHandler.list = new LinkedList<GameObject>();
+    }
+    
+    public static void addObject(final GameObject o) {
+        ObjectHandler.list.add(o);
+    }
+    
+    public static void removeObject(final GameObject o) {
+        ObjectHandler.list.remove(o);
+    }
+```
+Pada potongan source code tersebut, diperlihatkan saat linkedlist dibuat. Method addObject berfungsi untuk menambah objek baru yang akan ditampilkan pada layar. Sedangkan, method removeObject berfungsi untuk me-remove object saat telah bergerak keluar dari area layar.
 ### 6. Button
-Kelas button merupakan kelas yang berfungsi untuk mengatur 
+Kelas button merupakan kelas yang berfungsi untuk mengatur merupakan kelas berfungsi untuk memunculkan tombol untuk memulai permainan ketika game over.
 ### 7. Window
 Kelas ini merupakan kelas yang diturunkan dari kelas JFrame. Kelas ini mengatur Seperti apa panel yang akan dimunculkan di layar. Selain itu kelas ini juga memanggil kelas game yang dimana program akan tereksekusi.
+```
+public class Window extends JFrame {
+	public Window(final int width, final int height, final String title, final Game game) {
+        try {
+            game.serverSocket = new ServerSocket(9999);
+        }
+        catch (IOException e) {
+            System.out.println("Game already started!");
+            System.exit(0);
+        }
+        this.setTitle(title);
+        this.pack();
+        this.setSize(width + this.getInsets().left + this.getInsets().right, height + this.getInsets().top + this.getInsets().bottom);
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        this.setDefaultCloseOperation(3);
+        this.setVisible(true);
+        this.add(game);
+        game.start();
+    }
+}
+```
 ### 8. Game
-Kelas Game merupakan kelas main. Kelas ini digunakan untuk mengeksekusi jalannya program.
+Kelas Game merupakan yang digunakan untuk mengeksekusi jalannya program. Kelas ini terhubung dengan kelas window. Selain itu, object dari permainan Flappy Bird di insisiasi pada kelas ini.
+```
+ public void init() {
+        this.addKeyListener((KeyListener)new KeyHandler());
+        this.addMouseListener((MouseListener)new MouseHandler());
+        Game.img_gameover = GraphicsLoader.loadGraphics("gameover.png");
+        Game.background = GraphicsLoader.loadGraphics("background.png");
+        Game.ground = new Ground(0, Game.HEIGHT - 168, Game.WIDTH, 168);
+        Game.bird = new Bird(50, 50, 51, 36);
+        Game.startButton = new Button(138, 200, 156, 87, GraphicsLoader.loadGraphics("playbutton.png"));
+    }
+```
 ### 9. Tube
 Kelas Tube merupakan kelas yang menampilkan grafik pipa yang akan dilewati oleh burung nya.
 ```
