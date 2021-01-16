@@ -234,3 +234,4 @@ public class Main {
 ## Diagram Kelas Secara Umum 
 ![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Final%20Project/FlappyBird_FP.png)
 ## Link Pembahasan Project
+https://www.youtube.com/watch?v=0pTQeZ8dRgg&feature=youtu.be
