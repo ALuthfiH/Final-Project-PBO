@@ -100,5 +100,32 @@ Kelas button merupakan kelas yang berfungsi untuk mengatur
 Kelas ini merupakan kelas yang diturunkan dari kelas JFrame. Kelas ini mengatur Seperti apa panel yang akan dimunculkan di layar. Selain itu kelas ini juga memanggil kelas game yang dimana program akan tereksekusi.
 ### 8. Game
 Kelas Game merupakan kelas main. Kelas ini digunakan untuk mengeksekusi jalannya program.
+### 9. Tube
+Kelas Tube merupakan kelas yang menampilkan grafik pipa yang akan dilewati oleh burung nya.
+### 10. TubeType
+TubeType merupakan sebuah enum yang digunakan untuk mengatur letak pipa, apakah pipa terletak diatas atau dibawah berdasarkan parameter
+```
+ BOTTOM("BOTTOM", 0), 
+	    TOP("TOP", 1);
+```
+### 11. TubeHandler
+Kelas ini merupakan kelas yang mengatur ukuran dari pipa nya. Dimulai dari tinggi pipa dari bawah, tinggi pipa dari atas dan spasi antara dua pipa atas-bawah. Fungsi
+```
+ public static void spawnTube() {
+        int heightTop;
+        for (heightTop = TubeHandler.random.nextInt(TubeHandler.maxSize) + 1; heightTop < TubeHandler.minSize; 
+        heightTop = TubeHandler.random.nextInt(TubeHandler.maxSize) + 1) {}
+        final int heightBottom = TubeHandler.area - TubeHandler.spacing - heightTop;
+        final Tube tubeTop = new Tube(500, 0, 78, heightTop, TubeType.TOP);
+        final Tube tubeBottom = new Tube(500, heightTop + TubeHandler.spacing, 78, heightBottom, TubeType.BOTTOM);
+        ObjectHandler.addObject(tubeTop);
+        ObjectHandler.addObject(tubeBottom);
+    }
+```
+spawnTube() merupakan fungsi yang akan menampilkan pipa selanjutnya jika kita melewati pipa sebelumnya.
+### 12. KeyHandler
+Kelas ini merupakan kelas yang akan memberikan aksi ketika key pada keyboad ditekan.
+### 13. MouseHandler
+Kelas MouseHandler ini merupakan kelas yang akan memberikan aksi ketika mouse diklik.
 ## Diagram Kelas Secara Umum (Belum termasuk fitur tambahan)
 ![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Final%20Project/FlappyBird_FP.png)
