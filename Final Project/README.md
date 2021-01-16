@@ -48,7 +48,25 @@ merupakan method action yang akan dilakukan oleh kelas turunannya.
 public abstract void render(final Graphics p0);
 ```
 merupakan method yang berfungsi untuk mengeksekusi Graphic.
-### 2. Ground
+### 2. Bird
+Kelas Bird merupakan kelas turunan dari GameObject. Kelas ini adalah objek utama atau karakter yang akan dikontrol dalam permainan. isi dari kelas Bird adalah sebagai berikut.
+```
+public Bird(final int x, final int y, final int width, final int height)
+```
+Merupakan constructor dari kelas Bird.
+```
+for (int i = 0; i < images.length; ++i) {
+            images[i] = GraphicsLoader.loadGraphics("bird" + i + ".png");
+        }
+        (this.animation = new Animation((GameObject)this, 100L, true, images)).start();
+        ObjectHandler.addObject((GameObject)this);
+```
+Terdapat operasi looping yang berguna untuk memunculkan image Bird dalam bentuk animasi.
+```
+public void tick()
+```
+Merupakan method action. Pada class Bird ini method tick berfungsi sebagai movement object dan kondisi ketika GameOver.
+### 3. Ground
 Ground merupakan kelas turunan dari GameObject. Kelas ini Berfungsi untuk mengatur tanah atau dataran pada permainan Flappy Bird. Isi dari kelas Ground adalah sebagai berikut.
 ```
 public Ground(final int x, final int y, final int width, final int height)
@@ -62,13 +80,13 @@ Merupakan method action. Pada method ini, kecepatan tanah atau dataran bergerak 
 public void render(final Graphics g)
 ```
 Merupakan method yang berfungsi untuk menggambar object tanah setiap kali terjadi perubahan tiap waktunya.
-### 3. ObjectHandler
+### 4. ObjectHandler
 ObjectHandler merupakan kelas yang berfungsi untuk menangani benda-benda yang bergerak dalam game Flappy Bird. Pada kelas ini, terdapat linkedlist yang dimana saat object bergerak telah keluar dari area layar maka akan diremove.
-### 4. Button
+### 5. Button
 Kelas button merupakan kelas yang berfungsi untuk mengatur 
-### 5. Window
+### 6. Window
 Kelas ini merupakan kelas yang diturunkan dari kelas JFrame. Kelas ini mengatur Seperti apa panel yang akan dimunculkan di layar. Selain itu kelas ini juga memanggil kelas game yang dimana program akan tereksekusi.
-### 6. Game
+### 7. Game
 Kelas Game merupakan kelas main. Kelas ini digunakan untuk mengeksekusi jalannya program.
 ## Diagram Kelas Secara Umum (Belum termasuk fitur tambahan)
 ![](https://github.com/ALuthfiH/Final-Project-PBO/blob/main/Final%20Project/FlappyBird_FP.png)
