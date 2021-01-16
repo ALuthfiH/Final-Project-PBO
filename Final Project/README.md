@@ -21,6 +21,9 @@ Pada sumber referensi, ketika permainan dimulai kembali setelah GameOver, posisi
 ### 6. Level permainan
 Dan yang terakhir kami juga menambahkan sistem level pada permainan. Dimana semakin besar skor yang didapat, maka akan semakin cepat kecepatan permainan tersebut.
 
+### Source
+https://youtu.be/RnFNEy0Er-I
+https://zetcode.com/javagames/
 ## Penjelasan tiap Class
 ### 1. GameObject
 Kelas ini merupakan abstract class dan superclass dari kelas Bird,Ground, dan Tube. Dimana terdapat atribut sebagai berikut.
