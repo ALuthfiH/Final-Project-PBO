@@ -102,6 +102,20 @@ Kelas ini merupakan kelas yang diturunkan dari kelas JFrame. Kelas ini mengatur 
 Kelas Game merupakan kelas main. Kelas ini digunakan untuk mengeksekusi jalannya program.
 ### 9. Tube
 Kelas Tube merupakan kelas yang menampilkan grafik pipa yang akan dilewati oleh burung nya.
+```
+    public Tube(final int x, final int y, final int width, final int height, final TubeType type) {
+        super(x, y, width, height);
+        this.type = type;
+        this.velX = 3.0f;
+        this.tube = GraphicsLoader.loadGraphics("tube.png");
+        if (type == TubeType.BOTTOM) {
+            this.tubeBlock = GraphicsLoader.loadGraphics("tubebottomdown.png");
+        }
+        else if (type == TubeType.TOP) {
+            this.tubeBlock = GraphicsLoader.loadGraphics("tubebottomtop.png");
+        }
+    }
+```
 ### 10. TubeType
 TubeType merupakan sebuah enum yang digunakan untuk mengatur letak pipa, apakah pipa terletak diatas atau dibawah berdasarkan parameter
 ```
