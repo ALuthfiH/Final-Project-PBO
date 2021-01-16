@@ -49,7 +49,7 @@ public abstract void render(final Graphics p0);
 ```
 merupakan method yang berfungsi untuk mengeksekusi Graphic.
 ### 2. Animation
-Merupakan kelas yang berfungsi mengoperasikan Image objek dalam bentuk animasi. Berikut isi dari kelas Animation
+Merupakan kelas yang berfungsi mengoperasikan Image object dalam bentuk animasi. Berikut isi dari kelas Animation
 ```
 public Animation(final GameObject target, final long delay, final boolean loop, final BufferedImage[] images) 
 public Animation(final GameObject target, final int x, final int y, final long delay, final boolean loop, final BufferedImage[] images)
